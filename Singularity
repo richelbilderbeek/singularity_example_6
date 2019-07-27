@@ -9,7 +9,7 @@ From: pavel-demin/singularity-ubuntu:1804
 %post
 
     apt-get update
-    apt-get install git
+    apt-get install -qq git qt5-qmake qt5-default
     git clone https://github.com/richelbilderbeek/CityOfThieves.git
     cd CityOfThieves
     ./build_console
