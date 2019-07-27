@@ -28,4 +28,4 @@ script:
   # Build an image, must use sudo
   - sudo ./script
   # Run the container
-  - ./ubuntu_disco.simg
+  - ./city_of_thieves
