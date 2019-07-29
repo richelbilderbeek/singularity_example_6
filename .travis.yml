@@ -16,7 +16,7 @@ install:
   - sudo npm install -g markdown-link-check
   # Check dead links before singularity installs itself
   - rm .travis.yml
-  - ./scripts/check_dead_links
+  #- ./scripts/check_dead_links
   # Singularity
   - sudo ./install_singularity
 
