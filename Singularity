@@ -4,8 +4,9 @@ From: pavel-demin/singularity-ubuntu:1804
 
 %runscript
 
-    cd /CityOfThieves/Console
-    ./CityOfThievesConsole
+    echo "/CityOfThieves/Console/CityOfThievesConsole"
+    echo "cd /CityOfThieves/Console"
+    echo "./CityOfThievesConsole"
 
 %post
 
