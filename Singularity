@@ -4,7 +4,7 @@ From: pavel-demin/singularity-ubuntu:1804
 
 %runscript
 
-    CityOfThievesConsole
+    /CityOfThieves/Console/CityOfThievesConsole
 
 %post
 
