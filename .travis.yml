@@ -24,7 +24,8 @@ script:
   # Build the container
   - sudo ./build_container
   # Run the container
-  - ./singularity_example_6.sif
+  - ./singularity_example_6.sif &
+  - sleep 5
   # Check dead links
   - rm -f *.sif
   - rm -f *.tar.gz
