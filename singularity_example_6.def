@@ -1,6 +1,5 @@
-Bootstrap: shub
-
-From: pavel-demin/singularity-ubuntu:1804
+BootStrap: library
+From: ubuntu:18.10
 
 %runscript
 
@@ -22,7 +21,7 @@ From: pavel-demin/singularity-ubuntu:1804
 
     NAME singularity_example_6
  
-    DESCRIPTION Singularity example 6: Singularity 2.5, Ubuntu 19.04 (disco), City of Thieves
+    DESCRIPTION Singularity example 6: Singularity 3.2.1, Ubuntu 18.10 (cosmic), City of Thieves
 
     USAGE simply run the container
 
