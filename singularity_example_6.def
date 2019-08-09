@@ -3,9 +3,7 @@ From: ubuntu:18.10
 
 %runscript
 
-    echo "/CityOfThieves/Console/CityOfThievesConsole"
-    echo "cd /CityOfThieves/Console"
-    echo "./CityOfThievesConsole"
+    /CityOfThieves/Console/CityOfThievesConsole
 
 %post
 
