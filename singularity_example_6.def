@@ -10,8 +10,8 @@ From: ubuntu:18.10
 %post
 
     apt-get update
-    apt-get install -qq git qt5-qmake qt5-default
-    git clone https://github.com/richelbilderbeek/CityOfThieves.git
+    apt-get install -qq git qt5-qmake qt5-default g++
+    git clone https://github.com/richelbilderbeek/CityOfThieves.git --depth=1
     cd CityOfThieves
     ./build_console
 
