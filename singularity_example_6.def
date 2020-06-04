@@ -1,5 +1,5 @@
 BootStrap: library
-From: ubuntu:20.04
+From: ubuntu:18.04
 
 %runscript
 
@@ -7,15 +7,11 @@ From: ubuntu:20.04
 
 %post
 
-    #cat /etc/apt/sources.list
-    apt update
-    apt search qt5-qmake 
-    apt search qt5-default
-    #apt install -qq git qt5-qmake qt5-default g++ make
-    apt install -qq git g++ make --yes
+    apt-get update
+    apt-cache search libqt5
+    apt-get install -qq git g++ make qt5-qmake --yes
     git clone https://github.com/richelbilderbeek/CityOfThieves.git --depth=1
-    cd CityOfThieves
-    ./build_console
+    cd CityOfThieves && ./build_console && cd ..
 
 %labels
 
