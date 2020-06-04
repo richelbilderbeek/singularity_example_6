@@ -14,15 +14,15 @@ install:
   - npm config set strict-ssl false
   - sudo npm install -g markdown-link-check
   # Singularity
-  - sudo ./install_dependencies
+  - sudo ./install_dependencies.sh
   - go version
   - which go
-  - sudo ./install_singularity
+  - sudo ./install_singularity.sh
   - singularity --version
 
 script:
   # Build the container
-  - sudo ./build_container
+  - sudo ./build_container.sh
   # Run the container
   - ./singularity_example_6.sif &
   - sleep 5
