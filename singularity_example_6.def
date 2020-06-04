@@ -7,9 +7,9 @@ From: ubuntu:18.10
 
 %post
 
-    cat /etc/apt/sources.list
-    apt-get update
-    apt-get install -qq git qt5-qmake qt5-default g++ make
+    #cat /etc/apt/sources.list
+    apt update
+    apt install -qq git qt5-qmake qt5-default g++ make
     git clone https://github.com/richelbilderbeek/CityOfThieves.git --depth=1
     cd CityOfThieves
     ./build_console
